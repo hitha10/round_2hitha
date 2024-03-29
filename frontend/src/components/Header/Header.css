@@ -1,0 +1,60 @@
+.header{
+    left: 4%;
+    min-height: 100vh;
+    padding: 0%;
+    width: 100%;
+    margin: 30px auto; 
+    background-size: cover;
+    position: relative;
+}
+.header-contents{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 57%;
+    bottom: 35%;
+    left: -5vw;
+    animation: fadeIn 3s;
+}
+.header-contents h2{
+    font-weight:700;
+    color: rgb(255, 255, 255);
+    font-size: max(4.5vw,22px);
+}
+.header-contents p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2vw;
+}
+.header-contents button{
+    border: none;
+    color: #000000;
+    font-weight: 500;
+    padding: 1vw 2.3vw;
+    background: rgb(254, 253, 253);
+    font-size: max(1vw,13px);
+    border-radius: 50%;
+}
+button{
+    cursor: pointer;
+}
+@media (max-width:1050px) {
+    .header{
+        height: 38vw;
+    }
+    .header-contents{
+        max-width: 45%;
+    }
+}
+@media(max-width:750px){
+    .header-contents{
+        max-width: 55%;
+    }
+    .header-contents p{
+       display: none;
+    }
+    .header-contents button{
+        padding: 2vw 4vw;
+    }
+}
